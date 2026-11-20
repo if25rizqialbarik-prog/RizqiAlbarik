@@ -5,17 +5,17 @@ require("./propertyconstan.php");
 
 use Rizqi_Albarik\marketplace\produk;
 //object
-$produk = new produk("PRD001", "laptop", 10000000, 5);
+$produk = new produk();
 //$produk->kode="PRD001";
 //$produk->nama="laptop";
 //$produk->harga=10000000;
 //$produk->stok=5;
-
-echo "nama produk : ".$produk->nama;
+$produk->setkode('PRD001')->setnama('laptop')->setharga(10000000)->setstok(5);
+echo "nama produk : ".$produk->getnama();
 echo "<br/>";
-echo "harga :".$produk->harga;
+echo "harga :".$produk->getharga();
 echo "<br/>";
-echo "stok:". $produk->stok;
+echo "stok:". $produk->getstok();
 echo "<br/>";
 echo "pajak:". $produk->pajak() . "%";
 echo "<br/>";
