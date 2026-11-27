@@ -2,7 +2,7 @@
 
 namespace Rizqi_Albarik\marketplace;
 
-class produk{
+trait produk{
     private string $kode;
     private string $nama;
     private float $harga;
